@@ -1,0 +1,20 @@
+{
+
+
+    "aps": {
+
+
+         "badge": 1,
+
+
+         "alert": "Shopping reminder!",
+
+
+	"loc-key": "SHOPPINGREMINDER"
+
+
+    }
+
+
+}
+

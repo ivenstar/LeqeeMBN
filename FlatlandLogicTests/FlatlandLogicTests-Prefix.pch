@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'FlatlandLogicTests' target in the 'FlatlandLogicTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

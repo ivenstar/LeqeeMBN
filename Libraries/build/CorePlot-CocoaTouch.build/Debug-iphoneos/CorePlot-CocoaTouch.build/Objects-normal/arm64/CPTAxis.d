@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxis.m \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxis.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTDefinitions.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTLayer.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTResponder.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/iPhoneOnly/CPTPlatformSpecificDefines.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTTextStyle.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxisLabel.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxisLabelGroup.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxisSet.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAxisTitle.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTColor.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTExceptions.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTFill.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTGradient.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTGridLineGroup.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTGridLines.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTImage.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTLimitBand.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTLineCap.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTLineStyle.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTMutablePlotRange.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTPlotRange.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTPlotArea.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTAnnotationHostLayer.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTGraph.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTBorderedLayer.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTPlotSpace.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTShadow.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTTextLayer.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/CPTUtilities.h \
+  /Users/Sinri/Codes/Leqee/babynes_iphone/Libraries/CorePlot_new/Source/NSCoderExtensions.h

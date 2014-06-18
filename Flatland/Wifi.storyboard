@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="pbs-lY-JN4">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Wifi Welcome View Controller-->
+        <scene sceneID="BAL-P8-aDW">
+            <objects>
+                <viewController storyboardIdentifier="WifiWelcome" id="oYO-V4-iGZ" customClass="WifiWelcomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ufh-1W-eKY" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nEt-LA-xzG" customClass="FlatButton">
+                                <rect key="frame" x="20" y="377" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-40" maxX="0.0" maxY="40"/>
+                                <state key="normal" title="%wifi.next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCancel:" destination="oYO-V4-iGZ" eventType="touchUpInside" id="uvY-12-HB0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dLT-yC-fCV" customClass="FlatDarkButton">
+                                <rect key="frame" x="170.00000018339887" y="377" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="-40" maxX="0.0" maxY="40"/>
+                                <state key="normal" title="%wifi.begin">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Vh-GD-vxe" kind="push" id="d0z-Kj-now"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FyG-mD-WCF"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9j9-j2-80t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="49"/>
+        </scene>
+        <!--Flat Wifi Nav Controller-->
+        <scene sceneID="6UU-IG-aVb">
+            <objects>
+                <navigationController storyboardIdentifier="WifiChangeOptionsNC" definesPresentationContext="YES" id="UOa-tl-Vhr" customClass="FlatWifiNavController" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TWG-XX-ZnW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LFd-gW-eEN" kind="relationship" relationship="rootViewController" id="swY-4L-pLc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ha-3Z-a1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="733"/>
+        </scene>
+        <!--Wifi Change Options View Controller - %wifi.modifyOptions.header-->
+        <scene sceneID="gDv-Vq-Imw">
+            <objects>
+                <viewController storyboardIdentifier="WifiChangeOptions" id="LFd-gW-eEN" customClass="WifiChangeOptionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5c-fm-s5F" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aWd-zr-8cL" customClass="FlatLightButton">
+                                <rect key="frame" x="20" y="417" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%wifi.modifyOptions.deactivate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XY1-BM-s3f" kind="push" id="ieq-JG-V5Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E7y-n8-mKt" customClass="FlatDarkButton">
+                                <rect key="frame" x="20" y="366" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%wifi.modifyOptions.modify">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Vh-GD-vxe" kind="push" id="mbm-sz-Y2P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%wifi.modifyOptions.header" id="LuD-6r-F9x"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIs-eX-qXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47" y="733"/>
+        </scene>
+        <!--Wifi Deactivate View Controller - %wifi.modifyOptions.header-->
+        <scene sceneID="6Wo-pn-UBT">
+            <objects>
+                <viewController storyboardIdentifier="WifiDeactivate" id="XY1-BM-s3f" customClass="WifiDeactivateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dn0-pI-d1U" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RWc-AQ-2gt" customClass="FlatButton">
+                                <rect key="frame" x="20" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCancel:" destination="oYO-V4-iGZ" eventType="touchUpInside" id="jae-R3-Tfc"/>
+                                    <action selector="goBack" destination="XY1-BM-s3f" eventType="touchUpInside" id="j1S-HK-O6O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kLx-is-x5w" customClass="FlatDarkButton">
+                                <rect key="frame" x="170.00000018339887" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.confirm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doDeactivate:" destination="XY1-BM-s3f" eventType="touchUpInside" id="zj6-hJ-zo7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%wifi.modifyOptions.header" id="9oH-rN-Yas"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ga-x5-02g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="733"/>
+        </scene>
+        <!--Wifi Options View Controller - %wifiOptions.header-->
+        <scene sceneID="8xr-Xt-s5J">
+            <objects>
+                <viewController storyboardIdentifier="WifiOptions" id="9Vh-GD-vxe" customClass="WifiOptionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Txp-3p-M1I" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rpE-Lu-VgU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="397"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="qkx-EV-w6F" customClass="DynamicSizeContainer">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="989"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OmZ-La-W9j">
+                                                <rect key="frame" x="20" y="10" width="280" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" id="Oxc-je-FpN" customClass="FlatBackgroundView">
+                                                <rect key="frame" x="5" y="55" width="310" height="450"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.first" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0VR-Vl-KXJ">
+                                                        <rect key="frame" x="40" y="17" width="250" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.first.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5QH-MI-HBD">
+                                                        <rect key="frame" x="40" y="100" width="260" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.first.2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sa8-8V-qFy">
+                                                        <rect key="frame" x="40" y="175" width="260" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.first.3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDs-rO-zdj">
+                                                        <rect key="frame" x="73" y="268" width="217" height="53"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OpR-8X-aeM" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="7" y="6" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="c70-5Q-7S2">
+                                                        <rect key="frame" x="10" y="274" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i2Q-qf-3Oq" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="40" y="270" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="EcK-vU-gRQ">
+                                                        <rect key="frame" x="10" y="322" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ntr-Ns-CXa" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="40" y="322" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </button>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.first.option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zuo-BX-BqJ">
+                                                        <rect key="frame" x="40" y="6" width="207" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.first.4" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QPt-ts-CLf">
+                                                        <rect key="frame" x="73" y="322" width="217" height="65"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="l96-Fv-VxC">
+                                                        <rect key="frame" x="26" y="390" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.first.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="goConditions:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="1Sz-SQ-Qz6"/>
+                                                            <segue destination="CE7-hr-3zs" kind="modal" identifier="firstButton" id="YkU-fy-3mQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z55-13-tqn">
+                                                        <rect key="frame" x="13" y="412" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.second.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="goPolitics:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="28D-iH-dsJ"/>
+                                                            <segue destination="CE7-hr-3zs" kind="modal" identifier="secondButton" id="rpg-jE-fRa"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CZy-Jn-RWL" userLabel="Button - %wifiOptions.third.button">
+                                                        <rect key="frame" x="41" y="434" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.third.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="CE7-hr-3zs" kind="push" identifier="thirdButton" id="iG4-g2-fjn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gwK-Jf-a7x">
+                                                        <rect key="frame" x="5" y="5" width="5" height="5"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" tag="2" contentMode="scaleToFill" id="HBH-yN-V1v" customClass="FlatBackgroundView">
+                                                <rect key="frame" x="5" y="270" width="310" height="450"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.second" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pbk-lM-kC7">
+                                                        <rect key="frame" x="40" y="17" width="250" height="88"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.second.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gyX-Bu-yqu">
+                                                        <rect key="frame" x="40" y="99" width="260" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.second.2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rV3-wN-QgQ">
+                                                        <rect key="frame" x="40" y="175" width="260" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.second.3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Bo-JE-pbQ">
+                                                        <rect key="frame" x="73" y="268" width="217" height="53"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fX2-Kd-FVr" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="7" y="6" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mTc-nE-FjJ" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="40" y="270" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="AnH-Za-xbr">
+                                                        <rect key="frame" x="10" y="274" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5QF-Kw-1ja" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="40" y="322" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="OPU-XJ-xZw">
+                                                        <rect key="frame" x="10" y="322" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.second.option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vxa-zG-V99">
+                                                        <rect key="frame" x="40" y="6" width="207" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.second.4" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qAm-vo-Fut">
+                                                        <rect key="frame" x="73" y="322" width="217" height="65"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jhb-aQ-qcu">
+                                                        <rect key="frame" x="13" y="400" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.second.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="goPolitics:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="6e9-cm-i9l"/>
+                                                            <action selector="secondOptionButton:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="sxs-JK-mWc"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K26-vo-mBx" userLabel="Button - %wifiOptions.third.button">
+                                                        <rect key="frame" x="41" y="217" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.third.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMB-j2-VuS">
+                                                        <rect key="frame" x="5" y="5" width="5" height="5"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view clipsSubviews="YES" tag="3" contentMode="scaleToFill" id="IlT-ZU-wKf" customClass="FlatBackgroundView">
+                                                <rect key="frame" x="5" y="325" width="310" height="339"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.third.option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8mB-jC-YpX">
+                                                        <rect key="frame" x="40" y="6" width="250" height="21"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifiOptions.third" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mNs-Dw-qRi">
+                                                        <rect key="frame" x="40" y="8" width="250" height="108"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H5o-fW-MNt" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="7" y="6" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oVV-dp-Ov4" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="80" y="18" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="eIp-WQ-oHV">
+                                                        <rect key="frame" x="50" y="22" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cpo-u4-8mL" customClass="FlatCheckbox">
+                                                        <rect key="frame" x="142" y="157" width="25" height="25"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-error.png" id="3Co-Ys-sx4">
+                                                        <rect key="frame" x="143" y="158" width="24" height="24"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.third.1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="04N-fF-PB1">
+                                                        <rect key="frame" x="40" y="100" width="260" height="140"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.third.2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pEf-KB-r2Y">
+                                                        <rect key="frame" x="40" y="195" width="260" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.third.3" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n6b-5X-htf">
+                                                        <rect key="frame" x="46" y="143" width="217" height="53"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" text="%wifiOptions.third.4" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hlY-cp-GwY">
+                                                        <rect key="frame" x="46" y="137" width="217" height="65"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aXU-xg-9UU">
+                                                        <rect key="frame" x="118" y="148" width="73" height="44"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.second.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="thirdOptionButton:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="X5S-T4-N3i"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hvJ-W2-tBY" userLabel="Button - %wifiOptions.third.button">
+                                                        <rect key="frame" x="41" y="161" width="227" height="17"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <state key="normal" title="%wifiOptions.third.button">
+                                                            <color key="titleColor" red="0.50588238240000005" green="0.49019610879999997" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yc5-k9-rbr">
+                                                        <rect key="frame" x="5" y="5" width="5" height="5"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.87843143939971924" green="0.87843143939971924" blue="0.90196084976196289" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kvr-uq-LsL" customClass="FlatDarkButton">
+                                <rect key="frame" x="170" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSequeIfValid" destination="9Vh-GD-vxe" eventType="touchUpInside" id="ui7-TE-On7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c0q-YS-0Pb" customClass="FlatButton">
+                                <rect key="frame" x="20" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doCancel:" destination="9Vh-GD-vxe" eventType="touchUpInside" id="IhE-qM-lN5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987100601196" green="0.87450987100601196" blue="0.90196084976196289" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%wifiOptions.header" id="802-pB-HAa"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentView" destination="qkx-EV-w6F" id="4eN-ud-vsL"/>
+                        <outlet property="firstCheckError" destination="c70-5Q-7S2" id="Bqu-Sf-OF5"/>
+                        <outlet property="firstCheckFirst" destination="i2Q-qf-3Oq" id="AuO-76-xWO"/>
+                        <outlet property="firstCheckSecond" destination="Ntr-Ns-CXa" id="Gd9-FS-8FJ"/>
+                        <outlet property="firstCheckSecondError" destination="EcK-vU-gRQ" id="ezS-Tw-2H1"/>
+                        <outlet property="firstOption" destination="OpR-8X-aeM" id="2oW-T8-D4O"/>
+                        <outlet property="firstOptionFifthLabel" destination="gwK-Jf-a7x" id="TWa-NC-mz8"/>
+                        <outlet property="firstOptionFirstButton" destination="l96-Fv-VxC" id="Tew-hR-Zho"/>
+                        <outlet property="firstOptionFirstLabel" destination="0VR-Vl-KXJ" id="KcW-r4-5m4"/>
+                        <outlet property="firstOptionFourthLabel" destination="QPt-ts-CLf" id="7hj-iX-rcb"/>
+                        <outlet property="firstOptionPrivacyLabel" destination="EDs-rO-zdj" id="8j3-aj-37p"/>
+                        <outlet property="firstOptionSecondButton" destination="z55-13-tqn" id="d7y-Bh-oWP"/>
+                        <outlet property="firstOptionSecondLabel" destination="5QH-MI-HBD" id="kEk-FA-iu9"/>
+                        <outlet property="firstOptionThirdButton" destination="CZy-Jn-RWL" id="A9H-ph-Xec"/>
+                        <outlet property="firstOptionThirdLabel" destination="Sa8-8V-qFy" id="OxS-Z4-2cW"/>
+                        <outlet property="firstOptionTitleLabel" destination="Zuo-BX-BqJ" id="vKm-rh-zmt"/>
+                        <outlet property="scrollView" destination="rpE-Lu-VgU" id="fam-VO-Nmb"/>
+                        <outlet property="secondCheckError" destination="AnH-Za-xbr" id="E4D-b6-eGf"/>
+                        <outlet property="secondCheckFirst" destination="mTc-nE-FjJ" id="OZI-Ha-bae"/>
+                        <outlet property="secondCheckSecond" destination="5QF-Kw-1ja" id="WPL-8V-0nT"/>
+                        <outlet property="secondCheckSecondError" destination="OPU-XJ-xZw" id="PKa-z3-Hxo"/>
+                        <outlet property="secondOption" destination="fX2-Kd-FVr" id="i5v-Sq-Gnk"/>
+                        <outlet property="secondOptionFifthLabel" destination="JMB-j2-VuS" id="roh-0G-0sv"/>
+                        <outlet property="secondOptionFirstButton" destination="jhb-aQ-qcu" id="sKf-Jz-c4a"/>
+                        <outlet property="secondOptionFirstLabel" destination="Pbk-lM-kC7" id="WJX-Ur-e4X"/>
+                        <outlet property="secondOptionFourthLabel" destination="qAm-vo-Fut" id="Yj7-EB-m2E"/>
+                        <outlet property="secondOptionSecondLabel" destination="gyX-Bu-yqu" id="fcZ-nu-S25"/>
+                        <outlet property="secondOptionThirdButton" destination="K26-vo-mBx" id="GmE-Bx-RPx"/>
+                        <outlet property="secondOptionThirdLabel" destination="rV3-wN-QgQ" id="QEK-J2-BK5"/>
+                        <outlet property="secondOptionTitleLabel" destination="Vxa-zG-V99" id="qP7-1a-VnP"/>
+                        <outlet property="secondOptionsPrivacyLabel" destination="6Bo-JE-pbQ" id="rTk-UM-2Bf"/>
+                        <outlet property="thirdCheckError" destination="eIp-WQ-oHV" id="X6e-MV-ml3"/>
+                        <outlet property="thirdCheckFirst" destination="oVV-dp-Ov4" id="coY-N2-Paa"/>
+                        <outlet property="thirdCheckSecond" destination="cpo-u4-8mL" id="lDp-Qu-vw5"/>
+                        <outlet property="thirdCheckSecondError" destination="3Co-Ys-sx4" id="kad-JD-Wca"/>
+                        <outlet property="thirdOption" destination="H5o-fW-MNt" id="lhR-zB-bYB"/>
+                        <outlet property="thirdOptionFifthLabel" destination="yc5-k9-rbr" id="k3M-2Q-kCY"/>
+                        <outlet property="thirdOptionFirstButton" destination="aXU-xg-9UU" id="pgl-hv-qBw"/>
+                        <outlet property="thirdOptionFirstLabel" destination="mNs-Dw-qRi" id="PYf-Qu-oYO"/>
+                        <outlet property="thirdOptionFourthLabel" destination="hlY-cp-GwY" id="iaF-wW-4Sy"/>
+                        <outlet property="thirdOptionPrivacyLabel" destination="n6b-5X-htf" id="cbi-EZ-uDn"/>
+                        <outlet property="thirdOptionSecondLabel" destination="04N-fF-PB1" id="xlT-iy-e5J"/>
+                        <outlet property="thirdOptionTermsButton" destination="hvJ-W2-tBY" id="RfS-kV-ekI"/>
+                        <outlet property="thirdOptionThirdLabel" destination="pEf-KB-r2Y" id="xBF-w8-5mQ"/>
+                        <outlet property="thirdOptionTitleLabel" destination="8mB-jC-YpX" id="Qwh-uj-8MO"/>
+                        <segue destination="yus-m9-OCo" kind="push" identifier="babyProfiles" id="3er-5X-mk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9qH-j0-gOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="49"/>
+        </scene>
+        <!--Flat Wifi Nav Controller-->
+        <scene sceneID="kWl-Eg-OFp">
+            <objects>
+                <navigationController storyboardIdentifier="WifiWelcomeNC" definesPresentationContext="YES" id="pbs-lY-JN4" customClass="FlatWifiNavController" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iMA-kM-5B8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oYO-V4-iGZ" kind="relationship" relationship="rootViewController" id="nUf-Ae-7GJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Uq-Q4-Q3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="49"/>
+        </scene>
+        <!--Wifi Verify Address View Controller - %wifi.yourAddress-->
+        <scene sceneID="jw3-YU-yaa">
+            <objects>
+                <viewController id="kPK-dG-vDW" customClass="WifiVerifyAddressViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ksZ-5a-uFD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Ips-rL-HZD" customClass="GradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.yourAddress.complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ExO-WH-bOW">
+                                        <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="g2Y-Ig-9zC" customClass="FlatRadioButtonGroup">
+                                        <rect key="frame" x="16" y="49" width="284" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hoG-MF-pBs" customClass="FlatButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="116" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.miss">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CFD-Oq-kky" customClass="FlatButton">
+                                                <rect key="frame" x="125.99999920717397" y="0.0" width="116" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.mister">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.firstName" textAlignment="center" minimumFontSize="17" id="fiQ-8T-xCA" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="87" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.lastName" textAlignment="center" minimumFontSize="17" id="blu-49-Npr" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="125" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.streetNo" textAlignment="center" minimumFontSize="17" id="abG-b0-mvM" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="163" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.extension" textAlignment="center" minimumFontSize="17" id="dEK-rH-msO" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="201" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.postCode" textAlignment="center" minimumFontSize="17" id="3db-8I-dvk" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="239" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.city" textAlignment="center" minimumFontSize="17" id="ALp-xu-ofI" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="277" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.state" textAlignment="center" minimumFontSize="17" id="rkL-7R-Do3" customClass="FlatTextField">
+                                        <rect key="frame" x="59" y="317" width="241.99999920717397" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-user.png" id="asK-6z-kp1">
+                                        <rect key="frame" x="16" y="89" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-email.png" id="OOe-XG-YMd">
+                                        <rect key="frame" x="16" y="165" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="Wbc-Ym-HDs" userLabel="Container View">
+                                        <rect key="frame" x="0.0" y="295" width="320" height="504"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-phone.png" id="5OT-wc-GyE">
+                                                <rect key="frame" x="17" y="22" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Lg8-8j-XPl" customClass="FlatDarkButton">
+                                                <rect key="frame" x="96" y="137" width="130" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <state key="normal" title="%general.next">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="performSequeIfValid" destination="kPK-dG-vDW" eventType="touchUpInside" id="1de-ep-ggu"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.mobile" textAlignment="center" minimumFontSize="17" id="Hr6-Gx-EQ3" customClass="FlatTextField">
+                                                <rect key="frame" x="60" y="20" width="242" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VVu-7U-T23" customClass="FlatCheckbox">
+                                                <rect key="frame" x="17" y="64" width="25" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.differentDelivery" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="A3B-FM-8r4">
+                                                <rect key="frame" x="60" y="61" width="242" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="%wifi.yourAddress" id="6er-Lk-rAr"/>
+                    <connections>
+                        <outlet property="additionalInformationField" destination="dEK-rH-msO" id="8gh-YH-btp"/>
+                        <outlet property="cityField" destination="ALp-xu-ofI" id="5Vm-hT-DZg"/>
+                        <outlet property="containterView" destination="Wbc-Ym-HDs" id="buS-Zd-IWL"/>
+                        <outlet property="differentBillingDeliveryAddressField" destination="VVu-7U-T23" id="Cls-dX-a08"/>
+                        <outlet property="firstNameField" destination="fiQ-8T-xCA" id="REQ-cp-1rL"/>
+                        <outlet property="lastNameField" destination="blu-49-Npr" id="0CJ-6Q-brG"/>
+                        <outlet property="mobileNumberField" destination="Hr6-Gx-EQ3" id="y4E-Va-lUb"/>
+                        <outlet property="plzField" destination="3db-8I-dvk" id="0ja-LS-6hf"/>
+                        <outlet property="salutationBtnGroup" destination="g2Y-Ig-9zC" id="Zca-md-Vfc"/>
+                        <outlet property="stateField" destination="rkL-7R-Do3" id="1hK-bI-MCg"/>
+                        <outlet property="streetNoField" destination="abG-b0-mvM" id="mo2-6v-2E3"/>
+                        <segue destination="ddW-QL-gtJ" kind="push" identifier="configureDeliveryAddress" id="Hqb-uB-mZj"/>
+                        <segue destination="PMR-KS-r7k" kind="push" identifier="configurePayment" id="b2E-CI-vLI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ooo-MF-ToY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="49"/>
+        </scene>
+        <!--Wifi Select Delivery Address View Controller - %profile.delivery-->
+        <scene sceneID="1qo-fs-8ds">
+            <objects>
+                <viewController id="ddW-QL-gtJ" customClass="WifiSelectDeliveryAddressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSx-4B-gXz" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.verifyDelivery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OcI-Po-Yhf">
+                                <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="X6m-QI-fAy">
+                                <rect key="frame" x="0.0" y="49" width="320" height="315"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="Address" rowHeight="94" id="ENW-L5-EDH" customClass="AddressCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ENW-L5-EDH" id="QfA-22-Zwh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mme Jeanette Dupon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pbd-Dz-muL">
+                                                    <rect key="frame" x="20" y="15" width="245" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="24 Rue de Marbeuf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T2o-i9-KhZ">
+                                                    <rect key="frame" x="20" y="40" width="245" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="78401 Paris" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="La6-vh-a95">
+                                                    <rect key="frame" x="20" y="60" width="245" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkbox-normal.png" highlightedImage="checkbox-selected.png" id="xhm-Bf-f11">
+                                                    <rect key="frame" x="262" y="28" width="38" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="La6-vh-a95" id="c0c-D2-WjG"/>
+                                            <outlet property="nameLabel" destination="Pbd-Dz-muL" id="h3T-87-yyA"/>
+                                            <outlet property="streetLabel" destination="T2o-i9-KhZ" id="q0y-P0-CnS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ddW-QL-gtJ" id="sj3-SG-qAk"/>
+                                    <outlet property="delegate" destination="ddW-QL-gtJ" id="vxD-8l-gKp"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fM6-i3-pgb" customClass="FlatDarkButton">
+                                <rect key="frame" x="95" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSequeIfValid" destination="ddW-QL-gtJ" eventType="touchUpInside" id="oBb-yr-BHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eNT-EJ-Gu8">
+                                <rect key="frame" x="40" y="367" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="%profile.addAddress" image="icon-plus.png">
+                                    <color key="titleColor" red="0.46666669849999998" green="0.45882356169999999" blue="0.60392159219999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NI3-ID-Q7Z" kind="modal" id="nTc-aK-A62"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%profile.delivery" id="8E9-4u-VfU"/>
+                    <connections>
+                        <outlet property="continueButton" destination="fM6-i3-pgb" id="EAC-ib-kA2"/>
+                        <outlet property="tableView" destination="X6m-QI-fAy" id="BQB-CC-Ee8"/>
+                        <segue destination="3HH-BH-7JC" kind="push" identifier="configureBillingAddress" id="K1P-dH-yHl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yu-22-5le" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="135"/>
+        </scene>
+        <!--Wifi Select Billing Address View Controller - %profile.billing-->
+        <scene sceneID="0MP-Uw-JlC">
+            <objects>
+                <viewController id="3HH-BH-7JC" customClass="WifiSelectBillingAddressViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Uu-f4-dCh" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.verifyBilling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9yv-Y9-vva">
+                                <rect key="frame" x="20" y="19" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="pXV-wR-3ya">
+                                <rect key="frame" x="0.0" y="48" width="320" height="315"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" indentationWidth="10" reuseIdentifier="Address" rowHeight="94" id="Bfr-Vl-l43" customClass="AddressCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bfr-Vl-l43" id="dUv-TR-er9">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mme Jeanette Dupon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w3a-yn-Dm8">
+                                                    <rect key="frame" x="20" y="15" width="245" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="24 Rue de Marbeuf" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n4q-Sr-TsW">
+                                                    <rect key="frame" x="20" y="40" width="245" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="78401 Paris" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vyF-kW-CTw">
+                                                    <rect key="frame" x="20" y="60" width="245" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkbox-normal.png" highlightedImage="checkbox-selected.png" id="dv8-dJ-QV7">
+                                                    <rect key="frame" x="262" y="28" width="38" height="38"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="vyF-kW-CTw" id="0pQ-rf-sGy"/>
+                                            <outlet property="nameLabel" destination="w3a-yn-Dm8" id="6CC-2n-j9s"/>
+                                            <outlet property="streetLabel" destination="n4q-Sr-TsW" id="UY1-Pk-sV6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3HH-BH-7JC" id="zIb-zo-bUz"/>
+                                    <outlet property="delegate" destination="3HH-BH-7JC" id="VQB-Et-Ha8"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ehI-JB-vLZ" customClass="FlatDarkButton">
+                                <rect key="frame" x="95" y="417" width="130" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="%general.next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performSequeIfValid" destination="3HH-BH-7JC" eventType="touchUpInside" id="X4y-J1-lAW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v2z-C8-qoy">
+                                <rect key="frame" x="40" y="366" width="240" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="%profile.addAddress" image="icon-plus.png">
+                                    <color key="titleColor" red="0.46666669849999998" green="0.45882356169999999" blue="0.60392159219999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rl1-Vc-tfb" kind="modal" id="W32-Ry-5Zv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%profile.billing" id="VYF-bg-QMp"/>
+                    <connections>
+                        <outlet property="continueButton" destination="ehI-JB-vLZ" id="1f6-fJ-nRu"/>
+                        <outlet property="tableView" destination="pXV-wR-3ya" id="AY4-y0-Dte"/>
+                        <segue destination="PMR-KS-r7k" kind="push" identifier="configurePayment" id="oUN-uT-VdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pIZ-qJ-TQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="-66"/>
+        </scene>
+        <!--Wifi Add Delivery Address View Controller - %profile.delivery-->
+        <scene sceneID="m7N-QM-6RB">
+            <objects>
+                <viewController id="gd6-Co-SE0" customClass="WifiAddDeliveryAddressViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="CfK-zu-tjR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="yBz-cM-D1q" customClass="GradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.checkDelivery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GJ8-2q-MBL">
+                                        <rect key="frame" x="20" y="20" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="OCY-C2-OCZ" customClass="FlatRadioButtonGroup">
+                                        <rect key="frame" x="40" y="49" width="240" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kcp-Nx-sda" customClass="FlatButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.miss">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="faC-ez-Xyq" customClass="FlatButton">
+                                                <rect key="frame" x="125" y="0.0" width="115" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.mister">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.firstName" textAlignment="center" minimumFontSize="17" id="iH1-Q3-0Ko" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="87" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.lastName" textAlignment="center" minimumFontSize="17" id="Emk-aH-ZQg" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="125" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.streetNo" textAlignment="center" minimumFontSize="17" id="663-la-JUS" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="163" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.extension" textAlignment="center" minimumFontSize="17" id="fey-dk-3Rg" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="201" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.postCode" textAlignment="center" minimumFontSize="17" id="g4w-1l-z4f" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="239" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.city" textAlignment="center" minimumFontSize="17" id="z8t-il-GOO" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="277" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.state" textAlignment="center" minimumFontSize="17" id="eNU-0s-gQA" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="317" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-user.png" id="5As-KD-UH0">
+                                        <rect key="frame" x="40" y="89" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-email.png" id="TGx-Sy-bDk">
+                                        <rect key="frame" x="40" y="165" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.mobile" textAlignment="center" minimumFontSize="17" id="xJc-uJ-NRj" customClass="BabyNesPhoneTextField">
+                                        <rect key="frame" x="73" y="357" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-phone.png" id="BCQ-D5-12D">
+                                        <rect key="frame" x="40" y="359" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YNB-GY-kiI" customClass="FlatDarkButton">
+                                        <rect key="frame" x="95" y="405" width="130" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="%general.save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="save" destination="gd6-Co-SE0" eventType="touchUpInside" id="2km-u9-kzf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="%profile.delivery" id="1jK-d6-GJf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="seZ-ke-NAQ">
+                            <connections>
+                                <action selector="dismiss" destination="gd6-Co-SE0" id="zHw-h7-RPV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ZIPField" destination="g4w-1l-z4f" id="Ksx-qN-cQo"/>
+                        <outlet property="cityField" destination="z8t-il-GOO" id="Ok6-zC-DpI"/>
+                        <outlet property="firstNameField" destination="iH1-Q3-0Ko" id="nWz-xj-pUh"/>
+                        <outlet property="lastNameField" destination="Emk-aH-ZQg" id="ff8-u6-i4f"/>
+                        <outlet property="mobileField" destination="xJc-uJ-NRj" id="A7i-84-2WR"/>
+                        <outlet property="mobileIconImageView" destination="BCQ-D5-12D" id="KkM-wR-oTB"/>
+                        <outlet property="registerButton" destination="YNB-GY-kiI" id="ax1-ft-fJz"/>
+                        <outlet property="stateField" destination="eNU-0s-gQA" id="CV9-NS-p9n"/>
+                        <outlet property="streetExtraField" destination="fey-dk-3Rg" id="32f-CQ-KST"/>
+                        <outlet property="streetField" destination="663-la-JUS" id="16E-JM-Dq3"/>
+                        <outlet property="titleRadioButtonGroup" destination="OCY-C2-OCZ" id="lEr-mM-l2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGj-UJ-Jyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1577" y="1470"/>
+        </scene>
+        <!--Wifi Add Billing Address View Controller - %profile.billing-->
+        <scene sceneID="ugN-a0-0zg">
+            <objects>
+                <viewController id="Qjj-nF-6Ah" customClass="WifiAddBillingAddressViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="a0s-z6-Ppe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="HHU-7h-VnA" customClass="GradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%wifi.checkBilling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ibT-9T-Uel">
+                                        <rect key="frame" x="19" y="20" width="283" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="nsh-zu-6jg" customClass="FlatRadioButtonGroup">
+                                        <rect key="frame" x="40" y="49" width="240" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TcM-ft-kge" customClass="FlatButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.miss">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="q49-kz-DNY" customClass="FlatButton">
+                                                <rect key="frame" x="125" y="0.0" width="115" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <state key="normal" title="%profile.mister">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.firstName" textAlignment="center" minimumFontSize="17" id="AFY-sJ-RZ3" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="87" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.lastName" textAlignment="center" minimumFontSize="17" id="iTx-WL-1FJ" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="125" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.streetNo" textAlignment="center" minimumFontSize="17" id="3i1-aw-Gfc" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="163" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.extension" textAlignment="center" minimumFontSize="17" id="IpZ-Xc-Rqx" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="201" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.postCode" textAlignment="center" minimumFontSize="17" id="59J-w8-Sye" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="239" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.city" textAlignment="center" minimumFontSize="17" id="Ghe-2f-aAR" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="277" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.state" textAlignment="center" minimumFontSize="17" id="C0B-ie-Imj" customClass="FlatTextField">
+                                        <rect key="frame" x="73" y="315" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-user.png" id="IbW-GI-f4I">
+                                        <rect key="frame" x="40" y="89" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-email.png" id="trO-Hc-yce">
+                                        <rect key="frame" x="40" y="165" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-register-phone.png" id="pCk-gS-hDK">
+                                        <rect key="frame" x="40" y="395" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.mobile" textAlignment="center" minimumFontSize="17" id="31n-s0-KnK" customClass="BabyNesPhoneTextField">
+                                        <rect key="frame" x="73" y="393" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="%profile.country" textAlignment="center" minimumFontSize="17" id="A5y-at-Ykj" customClass="BabyNesCountryPicker">
+                                        <rect key="frame" x="73" y="353" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xqw-uh-SFU" customClass="FlatDarkButton">
+                                        <rect key="frame" x="95" y="441" width="130" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="%general.save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="save" destination="Qjj-nF-6Ah" eventType="touchUpInside" id="OQH-wh-r0t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87450987099999999" green="0.87450987099999999" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="%profile.billing" id="5aV-Nj-OWz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="li4-5F-ulN">
+                            <connections>
+                                <action selector="dismiss" destination="Qjj-nF-6Ah" id="TiT-xX-6YH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ZIPField" destination="59J-w8-Sye" id="e7f-Cw-NGz"/>
+                        <outlet property="cityField" destination="Ghe-2f-aAR" id="eMZ-0b-0hb"/>
+                        <outlet property="countryPicker" destination="A5y-at-Ykj" id="Gta-Lc-jgm"/>
+                        <outlet property="firstNameField" destination="AFY-sJ-RZ3" id="K8C-3A-8F6"/>
+                        <outlet property="lastNameField" destination="iTx-WL-1FJ" id="ZEk-FR-IeA"/>
+                        <outlet property="mobileField" destination="31n-s0-KnK" id="6pJ-Kc-eZe"/>
+                        <outlet property="mobileIconImageView" destination="pCk-gS-hDK" id="xQL-ni-XPn"/>
+                        <outlet property="registerButton" destination="Xqw-uh-SFU" id="mvh-Xe-tlF"/>
+                        <outlet property="stateField" destination="C0B-ie-Imj" id="oxx-sH-bbV"/>
+                        <outlet property="streetExtraField" destination="IpZ-Xc-Rqx" id="aDJ-3U-yTs"/>
+                        <outlet property="streetField" destination="3i1-aw-Gfc" id="xcZ-tk-cBn"/>
+                        <outlet property="titleRadioButtonGroup" destination="nsh-zu-6jg" id="XnZ-8V-GjF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cr-ad-ob3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2235" y="1357"/>
+        </scene>
+        <!--Wifi Payment View Controller - %wifi.payment-->
+        <scene sceneID="5Kc-5C-eED">
+            <objects>
+                <viewController storyboardIdentifier="Payment" id="PMR-KS-r7k" customClass="WifiPaymentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ERv-Bm-57Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="pdV-6l-nka">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PMR-KS-r7k" id="BiD-e2-9z0"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%wifi.payment" id="lBA-mX-c3z"/>
+                    <connections>
+                        <outlet property="webView" destination="pdV-6l-nka" id="lgi-Cr-xMh"/>
+                        <segue destination="ubG-KY-hh2" kind="push" identifier="configureStock" id="11o-tT-p1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE4-gy-nRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="-140"/>
+        </scene>
+        <!--Wifi Baby Profiles View Controller - %createProfile.header-->
+        <scene sceneID="X8N-80-Lsh">
+            <objects>
+                <viewController storyboardIdentifier="CreateBabyProfileNC" id="yus-m9-OCo" customClass="WifiBabyProfilesViewController" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Bfk-7F-MHp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="F5c-Hy-Fqt" customClass="DynamicSizeContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="536"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="K81-V6-g81">
+                                        <rect key="frame" x="0.0" y="276" width="325" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xpN-95-OTO">
+                                                <rect key="frame" x="91" y="0.0" width="153" height="113"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" image="add_baby_button.png">
+                                                    <color key="titleColor" red="0.46666669849999998" green="0.45882356169999999" blue="0.60392159219999997" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addBabyProfile" destination="yus-m9-OCo" eventType="touchUpInside" id="gCc-5b-CVi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aM9-f6-s4a" customClass="FlatButton">
+                                                <rect key="frame" x="42" y="142" width="240" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <state key="normal" title="%general.next">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="doRegister:" destination="yus-m9-OCo" eventType="touchUpInside" id="cNT-dY-t0f"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%createProfile.addBaby" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w78-XD-u89">
+                                                <rect key="frame" x="131" y="37" width="67" height="57"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="%createProfile.header" id="mgb-ta-wQ5"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addBabyButton" destination="xpN-95-OTO" id="veM-2n-uqW"/>
+                        <outlet property="buttonView" destination="K81-V6-g81" id="NB4-ci-h0C"/>
+                        <outlet property="container" destination="F5c-Hy-Fqt" id="laq-vX-BJE"/>
+                        <outlet property="view" destination="Bfk-7F-MHp" id="Rg6-yH-Gh3"/>
+                        <segue destination="kPK-dG-vDW" kind="push" identifier="configureAddresses" id="LHS-qL-AHY"/>
+                        <segue destination="ddW-QL-gtJ" kind="push" identifier="configureDeliveryAddressVerifyBypassed" id="e3Q-cF-R15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWt-zP-1pD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="49"/>
+        </scene>
+        <!--Flat Wifi Nav Controller-->
+        <scene sceneID="7AX-n0-4on">
+            <objects>
+                <navigationController id="Rl1-Vc-tfb" customClass="FlatWifiNavController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="LLb-6k-wjT"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5FR-om-vie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qjj-nF-6Ah" kind="relationship" relationship="rootViewController" id="QrF-yf-hOA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXf-wA-LL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149" y="673"/>
+        </scene>
+        <!--Flat Wifi Nav Controller-->
+        <scene sceneID="o7a-p2-nxd">
+            <objects>
+                <navigationController id="NI3-ID-Q7Z" customClass="FlatWifiNavController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Rp4-j5-fFh"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jaZ-pB-v3s">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gd6-Co-SE0" kind="relationship" relationship="rootViewController" id="M5h-cY-gkF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WO-Vy-WM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="825"/>
+        </scene>
+        <!--Wifi Capsules Stock View Controller - %capsulesStock.title-->
+        <scene sceneID="B0N-jS-C0f">
+            <objects>
+                <viewController storyboardIdentifier="CapsulesStock" id="ubG-KY-hh2" customClass="WifiCapsulesStockViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L83-Ed-LRX" customClass="GradientView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="vnN-QS-7yY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="ht6-VS-ycS">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="155"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tTS-Rz-0da">
+                                            <rect key="frame" x="10" y="10" width="300" height="42"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%capsulesStock.infoText" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aDh-ZV-asP">
+                                            <rect key="frame" x="10" y="60" width="300" height="86"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" id="SAb-5v-PnG" userLabel="Separator line">
+                                            <rect key="frame" x="0.0" y="154" width="320" height="1"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                            <color key="backgroundColor" red="0.87843143940000001" green="0.87843143940000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="4IH-9n-JOp">
+                                    <rect key="frame" x="0.0" y="441" width="320" height="70"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d7f-lZ-9aA" customClass="FlatLightButton">
+                                            <rect key="frame" x="20" y="13" width="280" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="%general.next">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="save" destination="ubG-KY-hh2" eventType="touchUpInside" id="q7c-jI-0La"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell2" rowHeight="100" id="oEP-LQ-bFM" customClass="CapsulesStockCell">
+                                        <rect key="frame" x="0.0" y="241" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oEP-LQ-bFM" id="mgV-hg-pUC">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="capsule-1.png" id="YMv-Kh-Ux7">
+                                                    <rect key="frame" x="20" y="20" width="41" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="23-36 mois" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OUx-rw-AIu">
+                                                    <rect key="frame" x="20" y="59" width="120" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="aaP-Dn-uHX">
+                                                    <rect key="frame" x="206" y="20" width="94" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="smallCountChanged:" destination="oEP-LQ-bFM" eventType="valueChanged" id="2qF-KQ-g6B"/>
+                                                    </connections>
+                                                </stepper>
+                                                <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="LbV-Rc-hHQ">
+                                                    <rect key="frame" x="206" y="52" width="94" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="largeCountChanged:" destination="oEP-LQ-bFM" eventType="valueChanged" id="jeM-Jl-mO2"/>
+                                                    </connections>
+                                                </stepper>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0SX-D2-Zc4">
+                                                    <rect key="frame" x="156" y="20" width="42" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t6O-Fi-E9N">
+                                                    <rect key="frame" x="156" y="52" width="42" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%capsulesStock.standard" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sOV-Am-b6s">
+                                                    <rect key="frame" x="118" y="22" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="90 ml" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E0Z-cg-4jE">
+                                                    <rect key="frame" x="118" y="32" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%capsulesStock.max" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bwo-1w-Wbh">
+                                                    <rect key="frame" x="118" y="54" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="90 ml" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ELJ-cR-lpV">
+                                                    <rect key="frame" x="118" y="64" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="capsuleImageView" destination="YMv-Kh-Ux7" id="OjN-8J-bQS"/>
+                                            <outlet property="largeCountLabel" destination="t6O-Fi-E9N" id="TmR-5d-ZeB"/>
+                                            <outlet property="largeCountStepper" destination="LbV-Rc-hHQ" id="aeA-eQ-Xza"/>
+                                            <outlet property="largeSizeLabel" destination="ELJ-cR-lpV" id="XQV-hz-0hZ"/>
+                                            <outlet property="nameLabel" destination="OUx-rw-AIu" id="Ch8-fr-346"/>
+                                            <outlet property="smallCountLabel" destination="0SX-D2-Zc4" id="RHG-fr-qZi"/>
+                                            <outlet property="smallCountStepper" destination="aaP-Dn-uHX" id="cSD-t7-IP5"/>
+                                            <outlet property="smallSizeLabel" destination="E0Z-cg-4jE" id="iRi-0p-rRg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell1" rowHeight="100" id="wBM-Dr-TK4" customClass="CapsulesStockCell">
+                                        <rect key="frame" x="0.0" y="341" width="320" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wBM-Dr-TK4" id="Ghv-R0-RNJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="capsule-1.png" id="rnj-4f-Nm3">
+                                                    <rect key="frame" x="20" y="20" width="41" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="23-36 mois" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUj-Eq-RQt">
+                                                    <rect key="frame" x="20" y="59" width="120" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="textColor" red="0.29411764709999999" green="0.2901960784" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="dCA-QQ-nhn">
+                                                    <rect key="frame" x="206" y="36" width="94" height="23"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="smallCountChanged:" destination="wBM-Dr-TK4" eventType="valueChanged" id="dlp-cK-krN"/>
+                                                    </connections>
+                                                </stepper>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZhF-8C-XP4">
+                                                    <rect key="frame" x="156" y="36" width="42" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%capsulesStock.standard" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TxU-wg-qtK">
+                                                    <rect key="frame" x="118" y="38" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="90 ml" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SPN-x0-lGx">
+                                                    <rect key="frame" x="118" y="48" width="42" height="13"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="capsuleImageView" destination="rnj-4f-Nm3" id="lGk-7i-mMA"/>
+                                            <outlet property="nameLabel" destination="NUj-Eq-RQt" id="RzC-E9-90u"/>
+                                            <outlet property="smallCountLabel" destination="ZhF-8C-XP4" id="UiO-Dy-vP5"/>
+                                            <outlet property="smallCountStepper" destination="dCA-QQ-nhn" id="JuB-dd-cDD"/>
+                                            <outlet property="smallSizeLabel" destination="SPN-x0-lGx" id="51g-X5-KPC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ubG-KY-hh2" id="jaq-h0-8mc"/>
+                                    <outlet property="delegate" destination="ubG-KY-hh2" id="sI9-WM-ek4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%capsulesStock.title" id="pp3-Ou-IT2"/>
+                    <connections>
+                        <outlet property="capsulesLeftLabel" destination="tTS-Rz-0da" id="RkM-Vl-9GI"/>
+                        <outlet property="tableView" destination="vnN-QS-7yY" id="gwa-i9-lQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgU-SN-AMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2975" y="19"/>
+        </scene>
+        <!--Web View View Controller - Test-->
+        <scene sceneID="bLs-Hb-0Di">
+            <objects>
+                <viewController storyboardIdentifier="WebView" title="Test" id="CE7-hr-3zs" customClass="WebViewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rX6-ws-TKo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="ezE-QQ-Rjr">
+                                <rect key="frame" x="0.0" y="20" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJn-j9-LOn">
+                                <rect key="frame" x="288" y="23" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="barbutton-close.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donePressed:" destination="CE7-hr-3zs" eventType="touchUpInside" id="ufU-a5-fdE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%createProfile.header" id="z7r-HR-pqj"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="ezE-QQ-Rjr" id="Gw9-BF-xfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yk4-18-fK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="-626"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_baby_button.png" width="113" height="113"/>
+        <image name="barbutton-close.png" width="38" height="38"/>
+        <image name="capsule-1.png" width="41" height="41"/>
+        <image name="checkbox-normal.png" width="38" height="38"/>
+        <image name="checkbox-selected.png" width="38" height="38"/>
+        <image name="icon-error.png" width="24" height="24"/>
+        <image name="icon-plus.png" width="26" height="26"/>
+        <image name="icon-register-email.png" width="25" height="25"/>
+        <image name="icon-register-phone.png" width="25" height="25"/>
+        <image name="icon-register-user.png" width="25" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="e3Q-cF-R15"/>
+        <segue reference="d0z-Kj-now"/>
+        <segue reference="iG4-g2-fjn"/>
+        <segue reference="oUN-uT-VdD"/>
+    </inferredMetricsTieBreakers>
+</document>

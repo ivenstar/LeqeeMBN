@@ -1,0 +1,17 @@
+{
+	"success": true,
+	"since": "/Date(1401580800000+0100)/",
+	"capsules": [
+		{
+			"boxCount": 1,
+			"capsuleType": "ThirteenthToTwentyFourthMonth",
+			"capsuleSize": "Small"
+		},
+		{
+			"boxCount": 2,
+			"capsuleType": "ThirdToSixthMonth",
+			"capsuleSize": "Large"
+		}
+	],
+	"capsulesLeft": 41
+}

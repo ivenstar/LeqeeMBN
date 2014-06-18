@@ -1,0 +1,29 @@
+[
+{
+"id": "Default",
+"name": "￼Standard - Colissimo 72h",
+"line1": "Livraison estimée le:",
+"line2": "(hors jours fériés)",
+"line3": "￼Les commandes effectuées avant 15h sont ￼livrées à votre domicile sous 3 jours ouvrés ￼entre 8h et 13h.",
+"line4": "(Hors dimanche et jours fériés)",
+"price": 490
+},
+{
+"id": "Express",
+"name": "Express - Chronopost 24h",
+"line1": "Livraison estimée le:",
+"line2": "(hors jours fériés)",
+"line3": "Les commandes effectuées avant 15h sont livrées à votre domicile le jour ouvré suivant.",
+"line4": "(Hors dimanche et jours fériés)",
+"price": 790
+},
+{
+"id": "Colizen",
+"name": "Express avec rendez-vous",
+"line1": "Livraison estimée le:",
+"line2": "Les commandes effectuées avant 15h sont livrées à votre domicile le jour ouvré suivant.",
+"line3": "",
+"line4": "",
+"price": 790
+}
+]

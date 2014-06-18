@@ -1,0 +1,20 @@
+ [
+  {
+  "id": "Default",
+  "name": "Standard-Lieferung innerhalb von 2 Werktagen ",
+  "line1": "Voraussichtl. Lieferdatum:",
+  "line2": "(außer an Feiertagen)",
+  "line3": "Bestellungen, die werktags vor 15 Uhr aufgeben werden, werden am gleichen Tag bearbeitet und innerhalb von 2 Werktagen geliefert. Die Versandkosten für Standard-Lieferungen betragen CHF 3.50 CHF. Sie entfallen, wenn Sie eine Maschine oder mindestens 4 Packungen Kapseln bestellt haben.",
+  "line4": "(außer samstags, sonntags und an Feiertagen)",
+  "price": 350
+  },
+  {
+  "id": "Express",
+  "name": "Premium-Lieferung innerhalb von 1 Werktag",
+  "line1": "Voraussichtl. Lieferdatum:",
+  "line2": "(außer an Feiertagen)",
+  "line3": "Bestellungen, die werktags vor 15 Uhr aufgeben werden, werden am gleichen Tag bearbeitet und werden am folgenden Werktag geliefert.",
+  "line4": "(außer samstags, sonntags und an Feiertagen)",
+  "price": 750
+  }
+  ]

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="480-Mc-gMY">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Configure Widgets View Controller - %configureWidgets.header-->
+        <scene sceneID="1TE-SK-7Jn">
+            <objects>
+                <viewController storyboardIdentifier="ConfigureWidgets" id="480-Mc-gMY" customClass="ConfigureWidgetsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0QI-KT-mNM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="lTx-UN-1u3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="54"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Efg-uC-HaL" customClass="FlatButtonSmall">
+                                        <rect key="frame" x="20" y="7" width="280" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <state key="normal" title="%configureWidgets.setDefault">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doSetDefaultConfigAndClose" destination="480-Mc-gMY" eventType="touchUpInside" id="90n-Pm-FZM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29019609089999998" green="0.28627452250000002" blue="0.38431376220000002" alpha="1" colorSpace="deviceRGB"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="-64"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="6Qh-qx-qtk">
+                                <rect key="frame" x="0.0" y="117" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="%configureWidgets.setManual" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e1N-1p-DwM">
+                                        <rect key="frame" x="20" y="9" width="280" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <color key="textColor" red="0.29019609089999998" green="0.29019609089999998" blue="0.37647062539999998" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="UdX-ps-8Cv">
+                                        <rect key="frame" x="20" y="35" width="280" height="408"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="vWK-d1-Sfv" customClass="SwipeView">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="248"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gi8-j0-HqX" customClass="FlatButton">
+                                                <rect key="frame" x="60" y="355" width="160" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <state key="normal" title="%general.add">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addRemoveWidgetClicked" destination="480-Mc-gMY" eventType="touchUpInside" id="JCh-SC-sId"/>
+                                                </connections>
+                                            </button>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Qxa-XR-qnJ">
+                                                <rect key="frame" x="20" y="236" width="240" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="pageIndicatorTintColor" red="0.90588241820000004" green="0.90196084980000002" blue="0.93333339689999995" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="currentPageIndicatorTintColor" red="0.29019609089999998" green="0.28627452250000002" blue="0.38431376220000002" alpha="1" colorSpace="deviceRGB"/>
+                                            </pageControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <inset key="insetFor6xAndEarlier" minX="0.0" minY="64" maxX="0.0" maxY="0.0"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588241820000004" green="0.90196084980000002" blue="0.93333339689999995" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="%configureWidgets.header" id="GGw-Mr-K0S"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addRemoveWidgetBtn" destination="gi8-j0-HqX" id="qNs-R6-uWa"/>
+                        <outlet property="pageControl" destination="Qxa-XR-qnJ" id="MrV-iG-gsl"/>
+                        <outlet property="setDefaultWidgetBtn" destination="Efg-uC-HaL" id="5U5-Ef-2Lg"/>
+                        <outlet property="swipeView" destination="vWK-d1-Sfv" id="i0X-IM-6g6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1GF-b8-wWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="-90"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

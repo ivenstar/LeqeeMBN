@@ -1,0 +1,767 @@
+/*
+ Localizable.strings
+ Flatland
+ 
+ Created by Jochen Block on 11.04.13.
+ Copyright (c) 2013 Proximity Technologies. All rights reserved.
+ */
+
+"$ 0.00" = "$ 0.00";
+"moneyunit" = "$";
+"%general.dateFormat" = " MM dd yyyy";
+"%general.dateFormat2" = "MMM dd";
+
+
+"%validationError" = "Validation Error";
+"%general.language" = "en";
+"%general.send" = "Send";
+"%general.continue" = "Next";
+"%general.cancel" = "Cancel";
+"%general.next" = "Next";
+"%general.confirm" = "Confirm";
+"%general.save" = "Save";
+"%general.register" = "Register";
+"%general.add" = "Add";
+"%general.buy" = "Buy now";
+"%general.reset" = "Reset";
+"%general.added" = "Added";
+"%general.modified" = "Modified";
+"%general.delete" = "Delete";
+"%general.cancel" = "Cancel";
+"%general.ok" = "OK";
+"%general.yes" = "Yes";
+"%general.no" = "No";
+"%general.call" = "Call";
+"%general.call2" = "Call";
+"%general.loading" = "Loading ...";
+"%general.alert.somethingWentWrong" = "Error|an issue has occurred. please try again.|Ok";
+"%general.alert.entries" = "Error|please check the data provided .|Ok";
+"%general.error" = "Error";
+
+"%general.alert.dateInFuture" = "|Please select a date in the past.|Ok";
+
+"%notification.capsule.stock" = "! You only have %d capsules left in stock";
+
+"%profile.title.f" = "Mrs";
+"%profile.title.m" = "Mr";
+"%profile.personalData" = "Personal  information";
+"%profile.addAddress" = "Add address";
+"%profile.miss" = "Miss";
+"%profile.mister" = "Mr";
+"%profile.firstName" = "First Name";
+"%profile.lastName" = "Last Name";
+"%profile.streetNo" = "Address";
+"%profile.extension" = "Address complement";
+"%profile.postCode" = "Zip/Postal code";
+"%profile.city" = "City";
+"%profile.state" = "State";
+"%profile.country" = "Country";
+"%profile.mobile" = "Telephone";
+"%profile.delivery" = "Delivery address";
+"%profile.deliveryWith" = "Delivery address :";
+"%profile.billing" = "Billing address";
+"%profile.billingWith" = "Billing address:";
+"%profile.email" = "E-mail";
+"%profile.emaiAddress" = "e-mail address";
+"%profile.emailAddress.confirm" = "e-mail confirmation";
+"%profile.password.new" = "New password";
+"%profile.password.confirm" = "Confirm your password";
+"%profile.password.old" = "Your current password";
+
+/* LoginRegistration */
+"%login.connect" = "Login to your BabyNes account";
+"%login.register" = "Create a new account";
+"%login.discover" = "Discover";
+"%login.locateUs" = "Store locator";
+"%login.contact" = "Contact us";
+"%login.contact.sent" = "Confirmation: Your contact\nrequest was sent.";
+"%login.email" = "e-mail address ";
+"%login.password" = "Password";
+"%login.forgot" = "Forgot your password ?";
+"%login.header" = "Connecting";
+"%login.alert.validEmail" = "Validation|invalid email address, please check|OK";
+"%login.alert.validPassword" = "Validation|please enter your password.|OK";
+"%login.alert.noBabies" = "Error|An issue has occurred, please try again.|Ok";
+"%login.alert.authorization" = "|Please check your account login information.|OK";
+
+"%forgot.header" = "Forgot password";
+"%forgot.text" = "Please enter your email address to receive your new password";
+"%forgot.alert.recoveryFailed" = "|We don't seem to have an account for the email address you entered.|OK";
+"%forgot.requestFinished" = "|If there is an account associated with the provided email you will receive an message with a link to reset your password.|OK";
+
+"%discover.header" = "Discover BabyNes";
+"%discover.text" = "BabyNes, Introducing the next generation of baby formula ";
+"%discover.visit" = "Find us www.babynes.com";
+"%discover.target" = "https://www.babynes.com";
+"%discover.video" = "demo_fr";
+
+"%shops.header" = "Store locator";
+"%shops.search" = "Find";
+"%shops.machines" = "machine";
+"%shops.capsules" = "capsule";
+"%shops.demonstration" = "demonstration";
+
+"%contact.header" = "Contact us";
+"%contact.callBabynes" = "Call BabyNes";
+"%contact.text.1" = "or call BabyNes directly";
+"%contact.text.2" = "1 855 036 036";
+"%contact.text.3" = " ";
+"%contact.createMessage.header" = "Send us an email :";
+"%contact.createMessage" = "Your message (max 350 caracters)";
+"%contact.noMail" = "No email set up yet|You need to set up an email account to be able to contact us.|OK";
+"%contact.email" = "info@babynes.com";
+"%contact.email.subject" = "Message from BabyNes Wifi iPhone App";
+
+"%register.header" = "Create your account";
+"%register.password" = "Password";
+"%register.password.repeat" = "Confirm password";
+"%register.mobile" = "Mobile number";
+"%register.acceptPrivacy" = "I have read BabyNes Privacy Policy and agree yo the Term & Conditions";
+"%register.newsletter.babynes" = "I would like to receive information from Gerber BabyNes";
+"%register.newsletter.all" = "";
+"%register.readPrivacy" = "Privacy  policy";
+"%register.register" = "Register";
+"%register.privacy" = "Privacy  policy";
+"%register.currentlyPregnant" = "I am pregnant";
+"%register.dateOfBirth" = "due date";
+"%register.areYouCurrentlyPregnant" = "Are you currently pregnant with this baby?";
+
+"%register.Salutation NotValid" = "Please select a title.";
+"%register.FirstName NotValid" = "Name format is incorrect.";
+"%register.LastName NotValid" = "Name format is incorrect.";
+"%register.Email NotValid" = "Your email address is not a valid email address, please check.";
+"%register.Email EmailAddressAlreadyExists" = "This email address is already used for another account, please use another one";
+"%register.ZIP NotValid" = "Invalid Zip/Postal code";
+"%register.City NotValid" = "Invalid city";
+"%register.Street NotValid" = "Invalid street name";
+"%register.EmailConfirm NotValid" = "Please confirm your email address.";
+"%register.Password NotValid" = "Your password must be between 8-15 caracters and can contain letters and numbers. ";
+"%register.PasswordConfirm NotValid" = "Confirm password";
+"%register.Mobile NotValid" = "Incorrect telephone number";
+"%register.Terms NotValid" = "Please approve Terms and conditions before registering";
+"%register.Birthday NotValid" = "Please enter a valid date.";
+
+"%address.salutation" = "Please choose title ";
+"%address.firstName" = "The format of your first name is incorrect.";
+"%address.lastName" = " The format of your last name is incorrect. Please try again";
+"%address.street" = "Invalid street name.";
+"%address.streetExtra" = "";
+"%address.zip" = "Invalid zipcode.";
+"%address.city" = "Unknown or invalid city";
+"%address.mobile" = " Invalid  telephone number.";
+
+"%createProfile.header" = "Baby profile";
+"%createProfile.addBaby" = "add another child";
+"%createProfile.alert.createFailed" = "An error has occurred, please try  again";
+
+"%createProfile.Name NotValid" = "Incorrect baby name.";
+"%createProfile.Birthday NotValid" = "Incorrect Birthdate";
+"%createProfile.Weight NotValid" = "Please check baby's weight.";
+"%createProfile.Gender NotValid" = "Please update tell us if your baby is Boy or a girl ";
+"%createProfile.Duedate NotValid" = "Incorrect due date.";
+"%createProfile.ChooseBottleSize" = "BabyNes bottles comes in 2 sizes. Please choose your preferred size. If you do not know, we recommend you to start off with the standard size (smallest). This setting can be changed again at a later stage.";
+
+/* Home */
+"%home.header" = "Home";
+"%home.configureWidgets" = "Personalize your widgets";
+"%home.configureWidgetsOld" = "Personalize your widgets";
+"%home.coachs" = "Your nutrition specialist";
+"%home.tips" = "Nutrition advice";
+"%home.timeline" = "Baby Timeline";
+"%home.details.babyformula" = "%@'s\nCurrent Formula";
+"%home.details.currentStock" = "Current Stock:";
+"%home.details.capsules" = "capsule(s)";
+
+
+"%menu.accountInformation" = "Account details";
+"%menu.orderingInformation" = "Order information";
+"%menu.adjustCapsuleStock" = "Adjust capsule stocks";
+"%menu.wifiConnection" = " wi-fi Connexion";
+"%menu.withings" = "Withings Smart Kid Scale ";
+"%menu.personalizeWidgets" = "Dashboard configuration";
+"%menu.newsletterBabynes" = "BabyNes Newsletter";
+"%menu.newsletterAll" = " ";
+"%menu.options" = "Options";
+"%menu.alerts" = "Alerts";
+"%menu.alerts.stock" = "Capsules stock";
+"%menu.alerts.bottle" = "Nutritionnists";
+"%menu.alerts.tips" = "New tip";
+"%menu.information" = "Information";
+"%menu.information.legal" = "General Terms & Conditions";
+"%menu.information.legal.html" = "legal_ch_fr";
+"%menu.information.privacy" = "Privacy policy ";
+"%menu.information.privacy.html" = "privacypolicy_ch_fr";
+"%menu.information.terms" = "Sales Terms & Conditions";
+"%menu.information.terms.html" = "terms_ch_fr";
+"%menu.information.hygiene" = "";
+"%menu.information.hygiene.html" = "";
+"%menu.information.eco" = " ";
+"%menu.information.eco.html" = "r";
+"%menu.information.wifi" = "Conditions d'utilisation des services connectés";
+"%menu.information.wifi.html" = "termsWIFI_DE";
+"%menu.information.logout" = "LOG OUT";
+"%menu.shop.label" = "Store";
+"%menu.shop" = "Online Store";
+
+"%editBaby.delete" = "Delete profile";
+
+/* WI-FI */
+"%wifi.begin" = "Start";
+"%wifi.next" = "Later";
+"%wifi.alert.cancel.title" = "Do you want to leave the Wi-Fi set up assistant?";
+"%wifi.alert.cancel.text" = "If you leave the Wi-Fi set up assistant now, you will have the possibility to finish it next visit";
+
+"%wifiWelcome.heading" = "SMART CAPSULE REPLANISHEMENT OPTIONS SELECTION !";
+"%wifiWelcome.paragraph.1" = "Last time you didn't finalize your Wi-Fi Option selection, please follow the steps to finalize it";
+"%wifiWelcome.paragraph.resume.1" = "Last visit, you didn't finalize your Wi-Fi Option selection, please follow the steps to finalize it.";
+"%wifiWelcome.paragraph.2" = "Each BabyNes capsule prepared with the machine is automatically logged, and you can choose from 3 simple reordering options.\nReplenish your capsules the way you want directly from your IPhone in one-click or get them automatically shipped when needed.";
+"%wifiWelcome.paragraph.3" = "";
+"%wifiWelcome.paragraph.4" = "";
+
+"%wifiChange.heading" = "Select Your Wi-Fi option  !";
+"%wifiChange.paragraph.1" = "Follow the different steps to modif your Wi-Fi replanishement option";
+"%wifiChange.paragraph.2" = "-\.";
+"%wifiChange.paragraph.3" = "-\\";
+
+"%wifiDeactivate.heading" = "You are about to deactivate your Wi-Fi replenishment service, Please confirm if you still want to unsubscribe ";
+"%wifiDeactivate.paragraph.1" = "If you deactivate it, You won't receive any automatic alerts or orders. You can reactivate it in the future ";
+"%wifiDeactivate.paragraph.2" = "To deactivate your Wi-Fi replenishment service, please follow the steps and confirm";
+"%wifiDeactivate.paragraph.3" = "1.\tSwitch on your machine";
+"%wifiDeactivate.paragraph.4" = "2.\tOnce the machine is switched on, please press the start button for 5 seconds";
+"%wifiDeactivate.paragraph.5" = "3.\tClick on confirm button to validate.";
+
+"%wifiOptions.header" = "Your Wi-Fi Reordering options";
+"%wifiOptions.text" = "You can choose from three simple reordering options. Select your service and enjoy your BabyNes safely:";
+
+"%wifiOptions.first.option" = "Zero Click Shopping";
+"%wifiOptions.first" = "";
+"%wifiOptions.first.1" = "Capsules will automatically be replenished before you run out with the right quantities and stage for your Baby*. Sit back and relax we do it all for you !";
+"%wifiOptions.first.2" = "For each child, you will receive automatically the right capsules based on his real consumption";
+"%wifiOptions.first.3" = "I want to select this option, I have read BabyNes Privacy Policy and agree to the Terms & Conditions";
+"%wifiOptions.first.4" = "";
+
+"%wifiOptions.second.option" = "One Click";
+"%wifiOptions.second" = "";
+"%wifiOptions.second.1" = "Receive an order suggestion when supplies run low for the right quantities and stage for your baby*. Then just click to order.";
+"%wifiOptions.second.2" = "For each child, your recommended order will automatically have the right capsules based on his real consumption.";
+"%wifiOptions.second.3" = "I want to select this option, I have read BabyNes Privacy Policy and agree to the Terms & Conditions.";
+"%wifiOptions.second.4" = "Track the capsule consumption , and order New capsules manually.";
+
+"%wifiOptions.third.option" = "Self managed";
+"%wifiOptions.third" = "";
+"%wifiOptions.third.1" = "Receive an alert when you run low on capsules and manage your own replenishment.";
+"%wifiOptions.third.2" = "I want to select this option, I have read BabyNes Privacy Policy and agree to the Terms & Conditions";
+"%wifiOptions.third.3" = "";
+
+"%wifiOptions.fourth.option" = "None of the above";
+"%wifiOptions.first.button" = "Sales conditions";
+"%wifiOptions.second.button" = "Privacy policy";
+"%wifiOptions.third.button" = "Terms & Conditions";
+
+"%wifiOptions.alert.select" = "Error|Please select one option.|OK";
+
+"%wifi.yourAddress" = "Your address";
+"%wifi.yourAddress.complete" = "Please check your address :";
+"%wifi.differentDelivery" = "Add a new delivery/billing address";
+"%wifi.verifyDelivery" = "please check your delivery address :";
+"%wifi.verifyBilling" = "please check your billing address :";
+"%wifi.payment" = "Payment";
+"%wifi.payment.autorize" = "Save my credit card details for future purchases";
+
+"%wifi.modifyOptions.header" = "Modify your Wi-Fi reordering option";
+"%wifi.modifyOptions.modify" = "modify my options";
+"%wifi.modifyOptions.deactivate" = "Deactivate Wi-Fi service";
+"%wifi.checkDelivery" = "Please add your delivery address :";
+"%wifi.checkBilling" = "Please add your billing address:";
+
+"%wifi.payment.pleaseCheck" = "|I allow BabyNes to store my credit card information for the coming replenishment orders to be shipped. |OK";
+
+"%wifi.success" = "|Congratulations, Your personal information and your Wi-Fi replenishment option have been successfully submitted, you can modify them at anytime .|OK";
+
+/* shop */
+"%capsuleRecommendation.title" = "Order recommendation";
+"%capsuleRecommendation.titalPrice" = "TOTAL :";
+"%capsuleRecommendation.infoText" = "Items Quantity can be modified in your basket";
+"%capsuleRecommendation.continue" = "Add to cart";
+"%capsuleRecommendation.adjust" = "Update your stock";
+"%capsuleRecommentation.capsuleStockLabel" = "Your current stock: %d capsule(s)";
+
+"%capsulesStock.title" = "Your stock";
+"%capsulesStock.infoText" = "If this is incorrect, please update your capsules stock to make sure our recomendation is accurate:";
+"%capsulesStock.standard" = "Standard";
+"%capsulesStock.max" = "Big";
+"%capsuleStock.capsulesLeftLabel" = "Your current stock: %d capsule(s)";
+"%capsuleStock.sinceLabel" = "We recommend to order by %@.";
+"%capsuleStock.success" = "|Your stock information has been successfully submitted, you can modify them at anytime.|OK";
+
+"%shopView.title" = "STORE HOME";
+"%shopView.machine" = "MACHINE";
+"%shopView.capsules" = "FORMULAS";
+"%shopView.withings" = "Withings Smart Kid Scale";
+
+"%capsules.title" = "BabyNes Formulas";
+"%capsules.recommendations" = "Order recommendation";
+"%capsules.longName" = "BabyNes %@ :";
+"%capsules.sensetive.alert.title" = "";
+"%capsules.sensetive.alert.text" = "";
+
+"%capsuleSummary.more" = "Discover more";
+"%capsuleSummary.volume" = "Bottle and capsule size";
+"%capsuleSummary.quantity" = "Quantity";
+"%capsuleSummary.pricePerBox" = "Price per box:";
+"%capsuleSummary.priceTotal" = "TOTAL :";
+"%capsuleSummary.modifyQuantity" = "Modify Quantity";
+"%capsuleSummary.boxInCapsules" = "%d box = %d capsules";
+"%capsuleSummary.boxesInCapsules" = "%d box = %d capsules";
+
+"%balance.title" = "Withings Smart Kid Scale ";
+"%balance.text.title" = "TRACK WEIGHT WITH A WI-FI ENABLED SCALE"; //only used on US
+"%balance.text" = "Enhance your weight tracker dashboard by syncing your MyBabyNes account with the Wi-Fi enabled Withings Smart Kids Scale";
+"%balance.alreadyClient" = "Already a Withings user ?";
+"%balance.synchronize" = "Synchronize your account";
+"%balance.moreInfo" = "To know more about the Withings scale, visit our partner website www.withings.com";
+"%balance.target" = "https://www.withings.com/fr/rangebabies?utm_source=Babynes&utm_medium=Partnership&utm_campaign=BabyNes";
+"%balance.alert.newsLetterSuccess" = "|You successfully subscribed to the newsletter.|OK";
+"%balance.alert.newsLetterNoSuccess" = "|It Didn't work. Please try later.|OK";
+"%balance.alert.registerFinished" = "Synchronization successfull!|Congratulations, you can now consult your growth chart using My BabyNes, your baby weights are automatically updated .|Ok";
+"%balance.child" = "Select the child name who is using the Withings scale:";
+
+/* Cart */
+"%cart.yourBasket" = "BASKET";
+"%cart.text" = "Free delivery fee if you order a machine or more than 4 boxes. Orders delivered in up to 2 business days (orders must  be completed by 4:00pm (EST)) ";
+
+"%cart.selectDelivery.title" = "Please choose your delivery address:";
+"%cart.differentDelivery" = "I would like to use a different billing address ";
+"%cart.selectBilling.title" = "Please choose your Billing address :";
+"%cart.selectDeliveryMethod" = "Please choose your shipping option :";
+"%cart.selectDeliveryMethod.footer" = "";
+
+"%cart.1daysaturday.title" = "1 day saturday";
+
+
+"%cart.overview.title" = "ORDER SUMMARY";
+"%cart.overview.modify" = "Modify my information";
+"%cart.overview.edit" = "Edit Order";
+
+"%cart.overview.subtotal" = "Subtotal:";
+"%cart.overview.storecredit" = "Store Credit:";
+"%cart.overview.tax" = "Tax:";
+
+"%cart.payment.title" = "PAYMENT INFORMATION";
+"%cart.payment.ready" = "Your order has been submitted";
+"%cart.payment.showOverview" = "See Order summary";
+"%cart.payment.activateExpress" = "Activate order in 2 clicks";
+"%cart.payment.failed.header" = "Sorry, payment authorization failed, please try again ";
+"%cart.payment.failed.text" = "Please try again, if the problem continues, contact us. ";
+"%cart.payment.error" = "Failed to place order! Please try again later!";
+
+"%cart.overview.confirmation" = "Order Confirmation";
+"%cart.machine" = "Machine";
+"%cart.machine.addition" = "BabyNes";
+"%cart.onePiece" = "%d piece";
+"%cart.morePieces" = "%d pieces";
+"%cart.oneBox" = "%d box";
+"%cart.moreBoxes" = "%d boxes";
+"%cart.moreCapsules" = "%d capsules";
+"%cart.priceWithPrice" = "Price: %@";
+"%cart.payment.orderNo" = "Order n° %@";
+"%cart.payment.emailLabel" = "Your email confirmation was sent to %@";
+
+"%cart.payment.expressCheckout" = "|Your information was saved.|OK";
+"%cart.alert.text" = "|Added to cart.|OK";
+"%cart.alert.checkout.text" = "|Minimum order quantity is 2 boxes.|OK";
+"%cart.alert.checkout" = "";
+
+/* Breastfeeding */
+"%breastfeeding.title" = "Breastfeeding Tracker";
+"%breastfeeding.start" = "start";
+"%breastfeeding.end" = "end";
+"%breastfeeding.duration" = "time";
+"%breastfeeding.add" = "+ Add";
+"%breastfeeding.text" = "Select the side, and hit the timer to start.";
+"%breastfeeding.left" = "Left side";
+"%breastfeeding.right" = "Right side";
+"%breastfeeding.alert.endDateEarlier" = "Error|Timing issue: the end time is earlier than start date.|Modify";
+"%breastfeeding.alert.sessionLength" = "Error|A feed cannot exceed 60 minutes.|Validate";
+"%breastfeeding.alert.nothingTracked" = "Error|No feeds were saved. |Validate";
+"%breastfeeding.lastSevenDays" = "Last 7 days";
+"%breastfeeding.feeding" = "Breastfeeding";
+"%breastfeeding.feedingPerHour" = "Daily feeds";
+
+/* Bottlefeeding */
+"%bottlefeeding.title" = "Bottle Tracker";
+"%bottlefeeding.feedings" = "Feedings from %@";
+"%bottlefeeding.hour" = "hour";
+"%bottlefeeding.quantity" = "Quantity";
+"%bottlefeeding.capsule" = "capsule";
+"%bottlefeeding.ml" = "Oz";
+"%bottlefeeding.edit.title" = "Edit Bottle";
+"%bottlefeeding.bottle" = "Bottles";
+"%bottlefeeding.yAxis" = "Average per day";
+"%bottlefeeding.noEntry" = "We have not had any bottle for selected day";
+"%bottlefeeding.delete" = "Delete ?";
+"%bottlefeeding.alert" = "Confirm bottle deletion ?";
+"%bottlefeeding.error" = "Error|This bottle already been submitted.|Ok";
+"%bottlefeeding.capsulePickerTitle" = "Select Capsule";
+
+/* Coachs */
+"%coach.header" = "Nutrition experts";
+"%coach.title" = "Questions ?";
+"%coach.text" = "Our experts in infant and prenatal nutrition are always at your service, 24 hours a day, 365 days a year";
+"%coach.chat" = "Contact them, chat now";
+"%coach.call" = "Call us";
+"%coach.phoneNo" = "tel:1 855 8 036 036*";
+"%coach.footer" = " * Free call";
+"%coach.typeHere" = "Ask your question";
+"%coach.alert.limitedLength" = "|Max. 500 caracters.|OK";
+"%coach.timestamp" = "eeee MM dd yyyy 'at' HH:mm";
+"%coach.welcome" = "Recent chats with our nutrition experts";
+
+/* Weight */
+"%weight.header" = "Weight Tracker";
+"%weight.title" = "Edit";
+"%weight.lastEntry" = "Last entries";
+"%weight.selectWeight" = "Please select a weight before saving!";
+
+
+/* tips */
+"%tips.header" = "Tips";
+"%tips.alert.enterEmail.header" = "Send Tip";
+"%tips.alert.enterEmail.text" = "Please enter the eMail address of the recipient";
+"%tips.alert.enterValid.header" = "Send Tip";
+"%tips.alert.enterValid.text" = "Please enter a valid email address";
+"%tips.alert.sent" = "|eMail sent|OK";
+"%tips.alert.saved" = "|Article added to favorites|OK";
+"%tips.alert.alreadySaved" = "|You already saved this tip!|OK";
+
+/* ConfigureWidgets */
+"%configureWidgets.header" = "Personalize your widgets";
+"%configureWidgets.setDefault" = "+I want to see all widgets";
+"%configureWidgets.setManual" = "Select widget one by one";
+"%configureWidgets.weight.title" = "Weight tracker";
+"%configureWidgets.weight.subtitle" = "follow his growth curve week after week.";
+"%configureWidgets.bottleFeed.title" = "Consumption";
+"%configureWidgets.bottleFeed.subtitle" = "Track your baby's nutrition and don't miss a bottle ";
+"%configureWidgets.breastFeed.title" = "Breastfeeding Tracker";
+"%configureWidgets.breastFeed.subtitle" = "Your best companion to never forget where you last feed Baby";
+"%configureWidgets.timeline.title" = "Timeline";
+"%configureWidgets.timeline.subtitle" = "Need Copy";
+
+
+/* settings */
+"%orderInformation.express.title" = "express checkout";
+"%orderInformation.express.text" = "Save your delivery and payment information to benefit from express checkout";
+"%orderInformation.express.address" = "Address";
+"%orderInformation.express.delivery" = "Delivery  option";
+"%orderInformation.express.billing" = "Payment";
+"%orderInformation.alert.expressChanged" = "|To active express checkout, please provide the information listed.|Ok";
+"%deliveryMode.footer" = "";
+"%deliverMode.deliveryMode" = "Delivery option :";
+"%deliverMode.subtitle" = "(La livraison en point relais est uniquement disponible sur le site internet)";
+"%deliverMode.title" = " Delivery option ";
+"%paymentCards.add" = "add another credit card information";
+"%paymentCards.title" = "Payment information :";
+
+
+/* editUser */
+"%user.title" = "Your personal Information";
+
+/* StoreLocatorController */
+"storeLocator.title" = "Store locator";
+"storeLocator.sellsBoth" = "BayNes Machine retailers.";
+"storeLocator.sellsCapsules" = "";
+"storeLocator.sellsMachines" = "";
+"storeLocator.hasDemonstations" = "";
+"storeLocator.alert.title" = "";
+"storeLocator.alert.message" = "BabyNes would like to use your current location to display retailers.";
+"storeLocator.alert.settings" = "Allow";
+"storeLocator.start.latitude" = "48.858391";
+"storeLocator.start.longitude" = "2.346268";
+
+
+/* regular expression for address validation */
+"regexp.email" = "^[a-zA-Z0-9%+_-]+(?:\\.[a-zA-Z0-9%+_-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\\.)+(?:[a-zA-Z]{2,4})$";
+"regexp.name" = "^[a-zA-ZÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ][a-zA-ZßÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ \\-\\.,;\\/´`\\^']*$";
+"regexp.firstname" = "^[a-zA-ZÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ][a-zA-ZßÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ \\-\\.,;\\/´`\\^']{0,24}$";
+"regexp.lastname" = "^[a-zA-ZÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ][a-zA-ZßÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ \\-\\.,;\\/´`\\^']{0,34}$";
+"regexp.street" = "^[a-zA-Z0-9ßÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ \\-\\.,\\(\\);\\/´`\\^']*$";
+"regexp.city" = "^[a-zA-Z0-9ßÄÖÜäöüáàâéèêëíìîóòôúùûýÁÀÂÉÈÊËÍÌÎÓÒÔÚÙÛÝçãñ \\-\\.,\\(\\);\\/´`\\^']*$";
+/*"regexp.mobile" = "^0[1-9]\\d{8,13}$";*/
+"regexp.mobile" = "^\\(?([0-9]{3})\\)?[-.?]?([0-9]{3})[-.?]?([0-9]{4})$"; /*North american phone number*/
+"regexp.zip" = "^\\d{4}$";
+"regexp.number" = "^\\d*$";
+
+/* MachineViewController */
+"machine.title" = "BabyNes Machine";
+"machine.text" = "Create the perfect bottle in less than a minute. The Wi-Fi enabled BabyNes Machine delivers superior hygiene, intuitive design, lump-free formula. Dimensions: 15.35 in. x 9.44 in. x 7.87 in. Weight: 7.9 lbs.Operates at 23V-900W ";
+"machine.price" = "Price : %@";
+"machine.priceInCents" = "24900";
+
+/* SupportViewController */
+"support.phonenumber" = "tel:1855036036";
+"support.nophone" = "|.|OK";
+
+/* BabyProfileViewController */
+"%babyProfile.takePhoto" = "Take a picture";
+"%babyProfile.pickPhoto" = "Choose picture from your library";
+"%babyProfile.choosePhoto" = "Add Picture";
+"%babyProfile.babyFirstName" = "Baby Name";
+"%babyProfile.babyBirthdate" = "Birthday";
+"%babyProfile.babyWeight" = "Weight";
+"%babyProfile.gender.neutral" = "None";
+"%babyProfile.gender.male" = "Boy";
+"%babyProfile.gender.female" = "Girl";
+"%babyProfile.delete" = "Delete profile";
+"%babyProfile.alert.couldNotCreate" = "Error|an issue has occurred , please try again.|Ok";
+"%babyProfile.alert.couldNotUpdate" = "Error|an issue has occurred , please try again.|Ok";
+"%babyProfile.alert.couldNotDelete" = "Error|an issue has occurred , please try again.|Ok";
+"%babyProfile.alert.confirmDelete" = "Confirmation|Please confirm profile deletion?|OK|Cancel";
+
+"%babyProfile.text.intro" = "Please create the baby profile you would like to track in MyBabyNes dashboard";
+
+"%babyprofile.capsule.title" = "Feeding";
+"%babyprofile.capsule.text" = "2 capsules volume available %@: to accomodate baby's preference";
+"%babyprofile.capsules.summary" = "Capsules price %@ %@ Oz (26 per box) = %@";
+
+/* Push-Notification-Key s*/
+"BOTTLEFEED" = "%@: Bottle is ready for Baby %@";
+"CHATMESSAGE" = "You have a new message for %@";
+"SHOPPINGREMINDER" = "%@ capsule stock is running low, our capsules recommendation is ready to be shipped ";
+"ORDER" = "Order now";
+
+
+//temp Ionel WifiSetup
+"%wifisetup.header" = "Setup your Machine";
+"%wifisetup.instructions" = "How to Connect";
+"%wifisetup.connecting" = "Connecting to Machine";
+"%wifisetup.machineFound" = "Setup Machine";
+"%wifisetup.connectionSuccessful" = "Connection Successful";
+"%wifisetup.error" = "Error";
+"%wifisetup.lostConnection" = "Lost Connection";
+"%wifisetup.scan" = "Scan";
+"%wifisetup.novisiblewifi" = "No visible wi-fi networks found";
+"%wifisetup.advancedwizard" = "Manual configuration";
+"%wifisetup.wizard1" = "Make sure your router is on and rescan for Wi-fi networks. If your SSID is hidden, configure it to be discoverable or continue with the advanced wizard for manual configuration.";
+"%wifisetup.wizard2" = "Use the advanced wizard if your router is not configured with DHCP or requires specific settings.";
+"%wifisetup.wizard3" = "The advanced wizard will open in Safari.";
+"%wifisetup.startnow" = "Start now";
+"%wifisetup.connectAgain" = "Please try to connect again by following the steps below:";
+"%wifisetup.lostStep1" = "Step 1: Activate your machine";
+"%wifisetup.lostStep2" = "Step 2. Select BabyNes Wi-Fi network:";
+"%wifisetup.lostStep3" = "Go to your iPhone's Wi-Fi settings and select the BABYNES network (leaving the App is required).";
+"%wifisetup.alert1" = "Make sure your Wi-Fi is on and your iPhone is connected to your Wi-Fi network.";
+"%wifisetup.alert2" = "Your machine's wi-fi connection has already been setup. Do you want to reconfigure your connection?";
+"%wifisetup.alert3" = "Make sure your cleaning tool is not inserted and turn on the machine.";
+"%wifisetup.instructions.step1title" = "Activate your machine:";
+"%wifisetup.instructions.step1text" = "• Remove the cleaning tool\n• Turn on the BabyNes Machine.\n• Press and hold the start button until it flashes (approx. 5 seconds). When the button stops flashing Wi-Fi is enabled.";
+"%wifisetup.instructions.step2title" = "Select BabyNes Wi-Fi network:";
+"%wifisetup.instructions.step2text" = "Go to your iPhone’s Wi-Fi settings and select the BABYNES network (leaving the App is\nrequired).";
+"%wifisetup.instructions.step3title" = "Return to the App";
+"%wifisetup.setupthemachine" = "Setup the Machine";
+"%wifisetup.scanning" = "Scanning for Machine ...";
+"%wifisetup.machinefound" = "We found your BabyNes Machine";
+"%wifisetup.scanningwifi" = "Scanning for Wi-Fi Networks ...";
+"%wifisetup.choosewifi" = "Choose your Wi-Fi network which your machine will use to connect to the internet";
+"%wifisetup.enterpassword" = "Enter the password for '%@'";
+"%wifisetup.internalerrortitle" = "Internal machine error";
+"%wifisetup.internalerrortext" = "An error occurred when scanning wi-fi networks. Please restart the connection process.";
+"%wifisetup.connectingmachine" = "Your BabyNes Machine is connecting to the network '%@'";
+"%wifisetup.settingupmachine" = "Setting up BabyNes Machine";
+"%wifisetup.successbeep" = "When successful, you will hear a beep.";
+"%wifisetup.restartconnection" = "￼￼Restart connection process";
+"%wifisetup.cannotconnect" = "Cannot connect to machine";
+"%wifisetup.errorconnecting" = "An error occurred when connecting to the machine. Please restart the connection process.";
+"%wifisetup.lost.diditbeep" = "Did you hear the Machine beep?";
+"%wifisetup.lost.reorder" = "If so, your machine is connected. Choose from three simple reordering options:";
+"%wifisetup.chooseoptions" = "Choose Options";
+"%wifisetup.lost.diditnotbeep" = "If you did not hear the machine beep:";
+"%wifisetup.machineconnected" = "Your Machine is now Connected";
+"%wifisetup.connectedcontinue" = "Your machine is now connected, continue to configure your WI-FI services with smart capsule replenishment.";
+"%wifisetup.choosereorder" = "Choose from three simple reordering options:";
+"%wifisetup.cannotwifi.cannotconnect" = "Cannot connect to wi-fi network";
+"%wifisetup.cannotwifi.description1" = "An error occurred when connecting your machine to your wi-fi network. Please make sure your Wi-Fi password is correct, check if your router is correctly connected to the internet and restart the connection process.";
+"%wifisetup.cannotwifi.description2" = "If the problem persists please call customer support";
+"%wifisetup.cannotwifi.description3" = "If your router is not configured with DHCP, please refer to advanced wizard here...";
+"%wifisetup.wificonnected" = "Wi-fi connected";
+"%wifisetup.cannotfind" = "Cannot find server";
+"%wifisetup.cannotserver.desc1" = "Your machine is connected to your wi-fi network, but it cannot connect to the BabyNes server.";
+"%wifisetup.cannotserver.desc2" = "Follow the steps below, or call BabyNes support if the problem persist.";
+"%wifisetup.cannotserver.step1" = "Step 1. Turn off your BabyNes Machine.";
+"%wifisetup.cannotserver.step2" = "Step 2. Logout from this application.";
+"%wifisetup.cannotserver.step3" = "Step 3. Login and restart the connection process.";
+"%wifisetup.invalidpassword" = "Invalid password";
+"%wifisetup.replenishmentoptions" = "Choose your replenishment service";
+"%wifisetup.replenishmentoptionchoose" = "Choose your replenishment service";
+"%wifisetup.terms" = "Benutzungsbedingungen für die vernetzten Service-Dienstleistungen der BabyNes-Maschine";
+"%wifisetup.terms.details" = "Ich habe die Benutzungsbedingungen für die vernetzten Service-Dienstleistungen der BabyNes-Maschine gelesen und akzeptiere sie. Ich möchte nun meine BabyNes-Maschine mit meinem BabyNes-Konto verbinden.";
+"%wifisetup.terms.linkRange" = "12,87"; //range of text to link against terms page.Needs recalculation when translating
+
+//Ionel wifi setup firmware update
+"%wifisetup.newfirmwareavailable" = "New firmware available";
+"%wifisetup.firmware.available1" = "Your BabyNes machine is now downloading and installing latest firmware. Please wait, this can take several minutes.";
+"%wifisetup.firmware.available2" = "Stay around your machine and wait for the beep.";
+"%wifisetup.newfirmwaredownloaded" = "New firmware has been downloaded";
+"%wifisetup.firmware.downloaded1" = "Your BabyNes machine will now install latest firmware and reboot.";
+"%wifisetup.firmware.downloaded2" = "Please listen for a beep within next minute.";
+"%wifisetup.firmware.error.title" = "Error while upgrading";
+"%wifisetup.firmware.error.text1" = "There was an issue when downloading and installing new firmware for your machine.";
+"%wifisetup.firmware.error.text2" = "Please shut down the machine and restart again.";
+
+
+//temp Vasi Menu
+
+"%personalinfo.header" = "Personal Information";
+
+"%services.header" = "Settings and Alerts";
+"%services.notifications" = "Notifications and alerts center";
+"%services.dashboard" = "Dashboard configuration";
+
+"%store.header" = "Online Store";
+
+"%wifi.header" = "Wi-Fi Services";
+"%wifi.machine" = "Wi-Fi machine connection";
+"%wifi.refill" = "Wi-Fi Replenishment Option";
+
+
+"%contact.header" = "Contact us";
+"%contact.callus" = "Call us";
+"%contact.nutritionist" = "Nutritionist chat";
+"%contact.storelocator" = "Store locator";
+"%contact.FAQ" = "FAQs";
+
+
+"%sharing.header" = "Sharing and Rating";
+"%sharing.rate" = "Rate BabyNes";
+"%sharing.review" = "Review this app";
+"%sharing.tellfriend" = "Tell a friend";
+
+
+//temp vasi for graphs
+
+"%graph.weight3Months" = "3 Months";
+"%graph.weight6Months" = "6 Months";
+"%graph.weight12Months" = "12 Months";
+
+
+"%graph.bottleWeekly"="Weekly View";
+"%graph.bottleMonthly"="Monthly View";
+"%graph.bottleYearly"="Yearly View";
+
+"%graph.bottleWeeklyDescription"="Number of feeds per day";
+"%graph.bottleMonthlyDescription"="Average number of daily feeds each week";
+"%graph.bottleYearlyDescription"="Average number of daily feeds each month";
+
+"%graph.breastWeeklyDescription"="Number of feeds per day";
+
+//temp for default screen
+"%defaultscreen.bottleMessageEmpty"="You have not added any bottles.";
+"%defaultscreen.bottleMessageEmpty2"="Add a new feeding now, or enable wi-fi to update automatically.";
+"%defaultscreen.bottleMessageEmpty3"="You have not added any feedings for the selected day";
+
+"%defaultscreen.breast1"="You have not added any feedings.";
+"%defaultscreen.breast2"="Add a new feeding now.";
+"%defaultscreen.breast3"="You have not added any feedings for the selected day";
+
+"%defaultscreen.weight1"="You have not added any weights.";
+"%defaultscreen.weight2"="Add a new weight now, or connect a Withings Smart Kid Scale to update automatically.";
+"%defaultscreen.weight3"="You have not added any weights for the selected day";
+
+"%default.buttonPrevious"="View previous feeding";
+
+//temp weight
+
+"%weightdataWidget.weightFrom"="Weight from %@";
+"%weightdataWidget.prior"="Prior Weights";
+
+
+
+//Sharing texts
+"%bottle.share.body.text" = "Babynes Test Bottle message body"; //TODO: Obtain copy for en
+"%bottle.share.email.subject" = "BabyNes dashboard";
+"%breastfeed.share.body.text" = "Babynes Test Breastfeeding message body";
+"%breastfeed.share.email.subject" = "BabyNes dashboard";
+"%weight.share.body.text" = "Babynes Test Weight message body";
+"%weight.share.email.subject" = "BabyNes dashboard";
+"%share.title" = "Share";
+"%share.facebook" = "Share on Facebook";
+"%share.twitter" = "Share on Twitter";
+"%share.email" = "Share by e-mail";
+"%share.bottle.imagetitle" = "Bottle Tracker";
+"%share.breastfeed.imagetitle" = "Breastfeeding Tracker";
+"%share.weight.imagetitle" = "Weight Tracker";
+
+//temp notifications and allert center
+"%notifficationsAndAlerts.Title" = "Notifications and alerts center";
+"%notifficationsAndAlerts.GetPushAbout" = "Select the push notications you want to receive ";
+"%notifficationsAndAlerts.BottleAlerts" = "Bottle preparation alert";
+"%notifficationsAndAlerts.BottleAlertsDescription" = "When you are away, receive a notication each time a bottle is prepared with your machine (required WiFi enabled)";
+"%notifficationsAndAlerts.BottleAlertsDescriptionRange" = "89,23"; //Range of text to be colored - Only for US
+"%notifficationsAndAlerts.ShoppingReminder" = "Capsules stock alert";
+"%notifficationsAndAlerts.ShoppingReminderDescription" = "Received a notication allowing you to order easily each time your stock is low (required WiFi enabled)";
+"%notifficationsAndAlerts.ShoppingReminderDescriptionRange" = "79,23"; //Range of text to be colored - Only for US
+"%notifficationsAndAlerts.GetInAppAbout" = "Get in-app notifications about";
+"%notifficationsAndAlerts.LowCapsuleStock" = "Capsules stock low";
+"%notifficationsAndAlerts.LowCapsuleStockDescription" = "Receive a notication when your estimated\nstock of capsules is low";
+"%notifficationsAndAlerts.LowCapsuleStockDescriptionNotConfigured" = "Configure your Wi-Fi refill service to enable low capsule stock alerts";
+"%notifficationsAndAlerts.LowCapsuleStockDescriptionNotConfiguredRange" = "0,27"; //Range of text to be colored
+"%notifficationsAndAlerts.Tips" = "Nutrition tips";
+"%notifficationsAndAlerts.TipsDescription" = "Receive a in app notication each time a new nutrition advice is available for your baby";
+
+//Temp Capsule Size
+"%capsuleSize.Small" = "Small";
+"%capsuleSize.Large" = "Large";
+"%capsuleSize.Standard" = "Standard";
+
+//PUSH notifications texts
+"%push.alert.orderrecommendation" = "You received an order recommendation!";
+"%push.alert.bottleprepared" = "You prepared one bottle of %@ for %@!";
+"%push.notif.bottleprepared" = "New capsule prepared!";
+"%push.notif.orderrecommendation" = "Order recommendation!";
+"%push.notif.lowstock" = "Low capsule stock (PUSH)!";
+"%push.alert.lowstock" = "Low capsule stock (PUSH) !";
+"%push.alert.view" = "View";
+"%push.alert.dismiss" = "Dismiss";
+
+//TIMELINE
+"%timeline.title" = "Timeline";
+
+"%timeline.date.format" = "MMM dd,YYYY|HH:mm";
+
+"%timeline.friends.folowing" = "%i friends are follwing your timeline";
+"%timeline.modify" = "Modify";
+
+"%timeline.mood" = "Mood";
+"%timeline.photo" = "Photo";
+"%timeline.journal" = "Journal";
+
+"%timeline.optional" = "(Optional)";
+"%timeline.required" = "(Required)";
+
+"%timeline.photo.title" = "Photo title";
+"%timeline.photo.caption" = "Caption";
+
+"%timeline.journal.title" = "Title";
+"%timeline.journal.journalEntry" = "Description";
+
+"%timeline.mood.title" = "Add %@'s mood";
+"%timeline.mood.description" = "Comment";
+
+"%timeline.mood.hungry" = "Hungry";
+"%timeline.mood.fussy" = "Fussy";
+"%timeline.mood.silly" = "Silly";
+"%timeline.mood.grumpy" = "Grumpy";
+"%timeline.mood.happy" = "Happy";
+"%timeline.mood.sad" = "Sad";
+"%timeline.mood.tired" = "Tired";
+"%timeline.mood.rebellious" = "Rebellious";
+
+"%timeline.alert.comment.required" = "Comment Required";
+"%timeline.alert.description.required" = "Description Required";
+"%timeline.alert.caption.required" = "Caption Required";
+
+"%timeline.widget.header" = "Timeline";
+
+"%timeline.add.entry" = "Add Entry";
+"%timeline.whats.new" = "What's new?";
+"%timeline.add.moments.text" = "Add moments and milestones to your\nTimeline to share with family and friends";
+

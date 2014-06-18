@@ -1,0 +1,32 @@
+{
+
+
+    "aps": {
+
+
+         "badge": 1,
+
+
+         "alert": "Bottlefeed!",
+
+
+	"loc-key": "BOTTLEFEED"
+
+
+    },
+
+
+"additions": {
+
+
+	"baby": "Mamatt",
+
+
+
+	"capsuleType": "1st Month Capsule"
+
+
+	}
+
+
+}
